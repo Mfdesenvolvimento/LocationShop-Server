@@ -1,5 +1,6 @@
 package br.com.mfdesenvolvimento.locationshop.Products;
 
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,8 @@ public class ProductsController {
   private UUID id;
 
   @GetMapping("/")
-  public ProductsModel list(HttpServletRequest request) {
-    var product = this.productsRepository.findByIdProductsModel((UUID) id);
+  public Optional<ProductsModel> list(HttpServletRequest request) {
+    var product = this.productsRepository.findById((UUID) id);
     return product;
   }
   
