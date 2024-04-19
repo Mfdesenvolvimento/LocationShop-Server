@@ -1,4 +1,4 @@
-package br.com.mfdesenvolvimento.locationshop.Users;
+package br.com.mfdesenvolvimento.locationshop.Users.Model;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
