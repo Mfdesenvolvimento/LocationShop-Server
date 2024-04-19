@@ -13,7 +13,7 @@ public class ProductsModel {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO, generator = "UUID")
 
-  //Table's field profucts
+  //Table's field products
 
   private UUID id;
   private String nameProduct;

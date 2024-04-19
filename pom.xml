@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.4</version>
+		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.mfdesenvolvimento</groupId>
@@ -64,7 +64,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-hateoas</artifactId>
     </dependency>
-
+		<!--Firebase Admin Sdk  -->
+		<dependency>
+				<groupId>com.google.firebase</groupId>
+				<artifactId>firebase-admin</artifactId>
+				<version>8.1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
