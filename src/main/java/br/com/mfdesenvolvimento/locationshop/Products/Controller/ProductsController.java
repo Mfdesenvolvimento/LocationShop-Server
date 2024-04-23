@@ -1,7 +1,6 @@
 package br.com.mfdesenvolvimento.locationshop.Products.Controller;
 
 import java.util.List;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,17 +25,14 @@ public class ProductsController {
   @GetMapping("/products")
   public List<ProductsModel> getAllProducts(HttpServletRequest request) {
     var idUser = request.getAttribute("idUser");
-    var product = this.productsRepository.findByIdUser((UUID) idUser);
+    var product = this.productsRepository.findByIdUser((String) idUser);
     return product;
   }
 
-
-	@PostMapping("/products")
-  public ResponseEntity<Object> createProduct(@RequestBody ProductsModel productsModel, HttpServletRequest request) {
-      var idUser = request.getAttribute("idUser");
-      productsModel.setIdUser((UUID) idUser);
-
-      var product = this.productsRepository.save(productsModel);
-      return ResponseEntity.status(HttpStatus.OK).body(product);
+  @PostMapping("/products")
+  public ResponseEntity<Object> createProduct(@RequestBody ProductsModel productsModel) {
+    String idUser = productsModel.getIdUser();
+    var product = this.productsRepository.save(productsModel);
+    return ResponseEntity.status(HttpStatus.OK).body(product);
   }
 }

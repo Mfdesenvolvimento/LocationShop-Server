@@ -19,9 +19,9 @@ public class ProductsModel {
   private String nameProduct;
   private String description;
   private String price;
-  private UUID idUser;
+  private String idUser;
 
-	public void setnameProduct(String nameProduct) throws Exception {
+	public void setnameProduct(@org.jetbrains.annotations.NotNull String nameProduct) throws Exception {
     if (nameProduct.length() > 50) {
       throw new Exception("The field nameProduct must be at least 3 characters");
     }

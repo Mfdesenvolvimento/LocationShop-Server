@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import br.com.mfdesenvolvimento.locationshop.Products.Model.ProductsModel;
 
 public interface IProductsRepository extends JpaRepository<ProductsModel, UUID> {
-  List<ProductsModel> findByIdUser(UUID idUser);
+  List<ProductsModel> findByIdUser(String idUser);
 
-  ProductsModel findByIdAndIdUser(UUID id, UUID idUser);
+  ProductsModel findByIdAndIdUser(UUID id, String idUser);
 }
