@@ -19,7 +19,9 @@ public class ProductsModel {
   private String nameProduct;
   private String description;
   private String price;
+  //Come of the mobile
   private String idUser;
+  private String Username;
 
 	public void setnameProduct(@org.jetbrains.annotations.NotNull String nameProduct) throws Exception {
     if (nameProduct.length() > 50) {
