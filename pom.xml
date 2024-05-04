@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.mfdesenvolvimento</groupId>
 	<artifactId>locationshop</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>locationshop</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -70,12 +70,10 @@
 				<artifactId>firebase-admin</artifactId>
 				<version>8.1.0</version>
 		</dependency>
-<!--	x	<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-docker-compose</artifactId>-->
-<!--			<scope>runtime</scope>-->
-<!--			<optional>true</optional>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-docker-compose</artifactId>
+		</dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
