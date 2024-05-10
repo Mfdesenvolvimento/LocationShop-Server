@@ -5,6 +5,7 @@ import java.util.UUID;
 import jakarta.persistence.*;
 import lombok.Data;
 
+
 @Data
 //Create the table Products
 @Entity(name = "products")
@@ -19,14 +20,10 @@ public class ProductsModel {
   private String nameProduct;
   private String description;
   private String price;
+
   //Come of the mobile
   private String idUser;
   private String Username;
 
-	public void setnameProduct(@org.jetbrains.annotations.NotNull String nameProduct) throws Exception {
-    if (nameProduct.length() > 50) {
-      throw new Exception("The field nameProduct must be at least 3 characters");
-    }
-    this.nameProduct = nameProduct;
-  }
+
 }
