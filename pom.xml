@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.mfdesenvolvimento</groupId>
 	<artifactId>locationshop</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>locationshop</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -32,56 +32,54 @@
       <version>2.5.0</version>
    	</dependency>
 
-		<dependency>
-		    <groupId>at.favre.lib</groupId>
-		    <artifactId>bcrypt</artifactId>
-		    <version>0.10.2</version>
-		</dependency>
+	<dependency>
+		<groupId>at.favre.lib</groupId>
+		<artifactId>bcrypt</artifactId>
+		<version>0.10.2</version>
+	</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-devtools</artifactId>
+<!--			<scope>runtime</scope>-->
+<!--			<optional>true</optional>-->
 
+	</dependency>
+	<dependency>
+		<groupId>org.postgresql</groupId>
+		<artifactId>postgresql</artifactId>
+		<scope>runtime</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<optional>true</optional>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+	</dependency>
+	<!-- Testcontainers for integration tests with containers (optional) -->
+<!--	<dependency>-->
+<!--		<groupId>org.testcontainers</groupId>-->
+<!--		<artifactId>testcontainers</artifactId>-->
+<!--		<scope>test</scope>-->
+<!--	</dependency>-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-hateoas</artifactId>
     </dependency>
-		<!--Firebase Admin Sdk  -->
-		<dependency>
-				<groupId>com.google.firebase</groupId>
-				<artifactId>firebase-admin</artifactId>
-				<version>8.1.0</version>
-		</dependency>
-<!--	x	<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-docker-compose</artifactId>-->
-<!--			<scope>runtime</scope>-->
-<!--			<optional>true</optional>-->
-<!--		</dependency>-->
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>13.0</version>
-            <scope>compile</scope>
-        </dependency>
+	<!--		<dependency>-->
+	<!--			<groupId>org.springframework.boot</groupId>-->
+	<!--			<artifactId>spring-boot-docker-compose</artifactId>-->
+	<!--		</dependency>-->
+	<dependency>
+		<groupId>org.jetbrains</groupId>
+		<artifactId>annotations</artifactId>
+		<version>13.0</version>
+		<scope>compile</scope>
+	</dependency>
     </dependencies>
 
 	<build>
