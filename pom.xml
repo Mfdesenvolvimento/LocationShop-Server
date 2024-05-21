@@ -10,40 +10,34 @@
 	</parent>
 	<groupId>br.com.mfdesenvolvimento</groupId>
 	<artifactId>locationshop</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>locationshop</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+	<dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
       <version>2.5.0</version>
    	</dependency>
-
 	<dependency>
 		<groupId>at.favre.lib</groupId>
 		<artifactId>bcrypt</artifactId>
 		<version>0.10.2</version>
 	</dependency>
-
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-devtools</artifactId>
-<!--			<scope>runtime</scope>-->
-<!--			<optional>true</optional>-->
-
 	</dependency>
 	<dependency>
 		<groupId>org.postgresql</groupId>
@@ -60,12 +54,6 @@
 		<artifactId>spring-boot-starter-test</artifactId>
 		<scope>test</scope>
 	</dependency>
-	<!-- Testcontainers for integration tests with containers (optional) -->
-<!--	<dependency>-->
-<!--		<groupId>org.testcontainers</groupId>-->
-<!--		<artifactId>testcontainers</artifactId>-->
-<!--		<scope>test</scope>-->
-<!--	</dependency>-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-hateoas</artifactId>
@@ -83,6 +71,11 @@
     </dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

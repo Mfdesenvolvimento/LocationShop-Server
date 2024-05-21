@@ -17,4 +17,4 @@ RUN apk add --no-cache maven
 RUN mvn -B -DskipTests package
 
 # Define o comando padrão a ser executado quando o contêiner for iniciado
-CMD ["java", "-jar", "/app/target/locationshop-0.0.1.jar"]
+CMD ["java", "-jar", "/app/target/locationshop-1.0.0.jar"]
