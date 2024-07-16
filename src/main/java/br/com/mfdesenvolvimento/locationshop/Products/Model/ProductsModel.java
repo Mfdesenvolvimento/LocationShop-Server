@@ -8,7 +8,8 @@ import lombok.Data;
 
 @Data
 //Create the table Products
-@Entity(name = "products")
+@Entity
+@Table(name = "products")
 public class ProductsModel {
 
   @Id

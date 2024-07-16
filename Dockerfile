@@ -2,7 +2,7 @@
 FROM openjdk:17-jdk-alpine
 
 # Define o diretório de trabalho dentro do contêiner
-WORKDIR /app
+VOLUME /app
 
 # Copia o arquivo pom.xml para o diretório de trabalho
 COPY pom.xml .
