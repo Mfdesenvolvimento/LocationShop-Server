@@ -1,0 +1,22 @@
+services:
+  app:
+    container_name: spring-boot
+    image: mfdesenvolvimento/location-shop-server:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/locationshop_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: Alegri@18
+
+  db:
+    container_name: postgres-db
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: locationshop_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Alegri@18
