@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.3.0
+Build-Jdk-Spec: 17
+Implementation-Title: locationshop
+Implementation-Version: 0.0.1
+Main-Class: br.com.mfdesenvolvimento.locationshop.MainClass
+
