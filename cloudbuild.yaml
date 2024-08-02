@@ -1,0 +1,15 @@
+steps:
+  - name: "gcr.io/cloud-builders/git"
+    args:
+      ["clone", "https://github.com/Mfdesenvolvimento/LocationShop-Server.git"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "mfdesenvolvimento/location-shop-server", "."]
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "run",
+        "deploy",
+        "location-shop-server",
+        "--image",
+        "mfdesenvolvimento/location-shop-server",
+      ]
