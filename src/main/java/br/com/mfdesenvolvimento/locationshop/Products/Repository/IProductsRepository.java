@@ -12,11 +12,11 @@ import br.com.mfdesenvolvimento.locationshop.Products.Model.ProductsModel;
 
 @Repository
 public interface IProductsRepository extends JpaRepository<ProductsModel, UUID> {
-    @SuppressWarnings("null")
+    @Override
     List<ProductsModel> findAll();
 
 
-    @SuppressWarnings("null")
+    @Override
     Optional<ProductsModel> findById(UUID id);
 
 }
